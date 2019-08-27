@@ -6,7 +6,11 @@
 
   <title>My Resume</title>
 
+  <script src="https://kit.fontawesome.com/da1bee6d9b.js"></script>
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="/webfontkit/stylesheet.css" type="text/css" charset="utf-8" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +18,96 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!-- start of header  -->
+  <header>
+    <div class="container">
+
+      <h1>Blue Deserts Lab</h1>
+      <a href="/index.html"><div class="logo box-shadow-logo"><img src="/09f8931b-a89a-4352-8373-ed69795bb3e9_200x200.png" alt="blue deserts lab logo"></div></a>
+
+      <div class="flex-container box-shadow">
+        <nav class="menu-container">
+          <ul>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Works</li>
+            <li>Contact</li>
+          </ul>
+          <!-- nav links -->
+          <section class="nav-links">
+            <a href="#"><div id="about-btn" class="menu-item color-one"><i id="fa-one" class="fas fa-user-alt"></i><i id="inactive" class="fas fa-user-check"></i></div></a>
+            <a href="#"><div id="skills-btn" class="menu-item color-two"><i id="fa-two" class="fas fa-toolbox"></i></div></a>
+            <a href="#"><div id="works-btn" class="menu-item color-three"><i id="fa-three" class="fas fa-laptop-code"></i></div></a>
+            <a href="#"><div id="contact-btn" class="menu-item color-four"><i id="fa-four" class="fas fa-envelope-open"></i><i id="inactive-a" class="fas fa-envelope"></i></div></a>
+          </section>
+          <!-- end of nav links -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- end of header  -->
+
+  <!-- start of main content  -->
+  <div id="about" class="main-content-display hd">
+    <i  class="far fa-times-circle exit"></i>
+    <section >
+      <img src="/resume-example.png" alt="profile picture">
+      <h2>FirstName LastName</h2>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et corrupti, sequi maiores maxime placeat provident voluptatibus tempora? Veniam possimus, voluptate assumenda provident nam doloribus vero excepturi consequuntur incidunt nesciunt.
+        </p>
+      </article>
+    </section>
+ </div>
+
+ <div id="skills" class="main-content-display hd">
+    <i  class="far fa-times-circle exit1"></i>
+    <section >
+      <img src="/resume-example.png" alt="profile picture">
+      <h2>Skills</h2>
+      <article>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript(ES6)</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>LESS</li>
+        </ul>
+      </article>
+    </section>
+ </div>
+
+ <div id="works" class="main-content-display hd">
+    <i  class="far fa-times-circle exit2"></i>
+    <section >
+      <img src="/resume-example.png" alt="profile picture">
+      <h2>FirstName LastName</h2>
+      <div>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+    </section>
+ </div>
+
+ <div id="contact" class="main-content-display hd">
+    <i  class="far fa-times-circle exit3"></i>
+    <section >
+      <img src="/resume-example.png" alt="profile picture">
+      <h2>FirstName LastName</h2>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et corrupti, sequi maiores maxime placeat provident voluptatibus tempora? Veniam possimus, voluptate assumenda provident nam doloribus vero excepturi consequuntur incidunt nesciunt.
+        </p>
+      </article>
+    </section>
+ </div>
+
+ <!-- end of main content  -->
+
+ <script src="/index.js"></script>
 </body>
 </html>

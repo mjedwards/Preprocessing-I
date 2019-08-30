@@ -156,7 +156,15 @@ div.container {
   height: 100vh;
   width: 100vw;
 }
+div.container a {
+  text-decoration: none;
+}
 div.container .logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0px auto;
+  justify-content: center;
   border-radius: 50%;
   border: 1px solid #87CCF5;
   background: #87CCF5;
@@ -165,6 +173,8 @@ div.container .logo {
   top: 25px;
   width: 50px;
   height: 50px;
+  text-decoration: none;
+  color: #000;
 }
 div.container .logo img {
   width: 50px;
@@ -281,6 +291,11 @@ div.main-content-display section img {
   width: 200px;
   height: 200px;
 }
+div.main-content-display section .work-skills-img {
+  border-radius: 0;
+  width: 50%;
+  height: 200px;
+}
 div.main-content-display section h2 {
   font-size: 1.5em;
   margin: 50px 0px;
@@ -293,6 +308,55 @@ div.main-content-display section article p {
 }
 .hd {
   right: 1300px;
+}
+section .progress-container {
+  width: 250px;
+  height: 20px;
+  background: black;
+}
+section .progress-container div.progress-bar {
+  height: 100%;
+  background: #F4F4F4;
+  animation: slideIn 8s linear;
+  font-family: 'Raleway', sans-serif;
+}
+section .progress-container .pb1 {
+  width: 80%;
+}
+section .progress-container .pb2 {
+  width: 90%;
+}
+section .progress-container .pb3 {
+  width: 75%;
+}
+section .progress-container .pb4 {
+  width: 100%;
+}
+section .progress-container .pb5 {
+  width: 80%;
+}
+section .progress-container .pb6 {
+  width: 90%;
+}
+section ul li {
+  font-family: 'Raleway', sans-serif;
+  list-style: circle;
+  margin: 10px auto;
+}
+section .contact-form div {
+  font-family: 'Raleway', sans-serif;
+}
+section .contact-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+section .contact-form form div input,
+section .contact-form form div textarea {
+  height: 30px;
+  margin: 0 10px;
+  width: 300px;
 }
 .color-one {
   background: #2D82B5;
@@ -352,9 +416,12 @@ div.main-content-display section article p {
 }
 @keyframes slideIn {
   0% {
-    transform: translateX(-100%);
+    width: 0%;
+  }
+  50% {
+    width: 50%;
   }
   100% {
-    transform: translateX(0%);
+    width: 100%;
   }
 }

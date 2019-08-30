@@ -90,7 +90,17 @@ div.container {
     height: 100vh;
 	width: 100vw;
 	
+
+	a {
+		text-decoration: none;
+	}
+	
 	.logo {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		margin: 0px auto;
+		justify-content: center;
 		border-radius: 50%;
 		border: 1px solid @logo-color;
 		background: @logo-color;
@@ -99,6 +109,8 @@ div.container {
 		top: 25px;
 		width: 50px;
 		height: 50px;
+		text-decoration: none;
+		color: #000;
 
 		img {
 			width: 50px;
@@ -249,6 +261,12 @@ div.main-content-display {
 			height: 200px;
 		}
 
+		.work-skills-img {
+			border-radius: 0; 
+			width: 50%;
+    		height: 200px;
+		}
+
 		h2 {
 			font-size: 1.5em;
 			margin: 50px 0px;
@@ -269,6 +287,72 @@ div.main-content-display {
 
 .hd {
 	right: 1300px;
+}
+
+section {
+	.progress-container {
+		width: 250px;
+		height: 20px;
+		background: black;
+		
+		div.progress-bar {
+			height: 100%;
+			background: #F4F4F4;
+			animation: slideIn 8s linear; 
+			font-family: 'Raleway', sans-serif;
+		}
+
+		.pb1 {
+			width: 80%;
+		}
+		.pb2 {
+			width: 90%;
+		}
+		.pb3 {
+			width: 75%;
+		}
+		.pb4 {
+			width: 100%;
+		}
+		.pb5 {
+			width: 80%;
+		}
+		.pb6 {
+			width: 90%;
+		}
+	}
+
+	ul {
+		li {
+			font-family: 'Raleway', sans-serif;
+			list-style: circle;
+			margin: 10px auto;
+		}
+	}
+}
+
+section {
+	.contact-form {
+		div {
+			font-family: 'Raleway', sans-serif;
+		}
+
+		form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+
+			div {
+				input, textarea {
+					height: 30px;
+					margin: 0 10px;
+					width: 300px;
+				}
+
+			}
+		}
+	}
 }
 
 // nav.menu-container {
@@ -413,10 +497,14 @@ div.main-content-display {
 
 @keyframes slideIn {
 	0% {
-		transform: translateX(-100%)
+		width: 0%
+	  }
+
+	  50% {
+		width: 50%
 	  }
 	
 	100% {
-		transform: translateX(0%)
+		width: 100%
 	  }  
 }

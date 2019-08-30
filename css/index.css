@@ -352,11 +352,17 @@ section .contact-form form {
   align-items: center;
   flex-flow: column;
 }
+section .contact-form form div {
+  margin: 30px auto;
+}
 section .contact-form form div input,
 section .contact-form form div textarea {
   height: 30px;
   margin: 0 10px;
   width: 300px;
+}
+section .contact-form form div textarea {
+  height: 100px;
 }
 .color-one {
   background: #2D82B5;
